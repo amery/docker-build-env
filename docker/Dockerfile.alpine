@@ -3,6 +3,7 @@ FROM quay.io/amery/docker-golang-builder:latest
 # interactivity
 RUN apk --update upgrade -U && apk --no-cache add \
 		bash \
+		bash-completion \
 		tig \
 		vim \
 	&& ln -snf vim /usr/bin/vi
